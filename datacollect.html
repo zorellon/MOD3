@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<Title>Excel Linking Example</Title>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+</HEAD>
+<body>
+<p>
+<a href =""/?scid=Sensordata.xls%23%27sheet%20two%27%21d4>
+This link will open the Excel file to the second page with the focus on
+cell D4 </a>
+<a href="http://localhost/excel/asheet.xls#TableName">
+This link will set the focus on a named area of the spreadsheet
+</a>.
+</p>
+<form>
+<input type=button
+ value="Via Jscript"
+ onclick='location.href = "asheet.xls#TableName"'>
+</form>
+</body>
+</html>

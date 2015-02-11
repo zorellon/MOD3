@@ -1,0 +1,11 @@
+$content = file_get_contents(httpwww.cba.amamSitePagesDefault.aspx);
+
+preg_match('#bUSDb(.)em class=w_50([0-9.])emem class=w_50([0-9.])em#Uis', $content, $USDmatch);
+preg_match('#bEURb(.)em class=w_50([0-9.])emem class=w_50([0-9.])em#Uis', $content, $EURmatch);
+preg_match('#bGBPb(.)em class=w_50([0-9.])emem class=w_50([0-9.])em#Uis', $content, $GBPmatch);
+
+$eur = $EURmatch[3];
+$usd = $USDmatch[3];
+$gbp = $GBPmatch[3];
+
+echo EUR $eur USD $usd GBP $gbp;
